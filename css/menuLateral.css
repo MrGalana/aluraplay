@@ -1,0 +1,182 @@
+.menu__container {
+    background-color: var(--azul-escuro);
+    bottom: 0%;
+    font-size: 0.875rem;
+    height: 74px;
+    position: fixed;
+    width: 100%;
+}
+
+.menu__lista {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.menu__lista li {
+    align-self: center;
+}
+
+.menu__itens {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4) {
+    display: none;
+}
+
+.menu__itens:hover {
+    background-color: var(--azul-medio);
+    transition: .5s;
+}
+
+.icone__inicio::before {
+    content: url(../img/menu/home.png);
+}
+
+.icone__explorar::before {
+    content: url(../img/menu/explore.png);
+}
+
+.icone__shorts::before {
+    content: url(../img/menu/shorts.png);
+}
+
+.icone__inscricoes::before {
+    content: url(../img/menu/subscriptions.png);
+}
+
+.icone__biblioteca::before {
+    content: url(../img/menu/video_library.png);
+}
+
+.icone__historico::before {
+    content: url(../img/menu/history.png);
+}
+
+.icone__relogio::before {
+    content: url(../img/menu/history_toggle_off.png);
+}
+
+.icone__like::before {
+    content: url(../img/menu/thumb_up_alt.png);
+}
+
+.icone__alura::before {
+    content: url(../img/menu/Avatar_Alura.png);
+}
+
+.icone__gaveta::before {
+    content: url(../img/menu/Avatar_Gaveta.png);
+}
+
+.icone__ballerini::before {
+    content: url(../img/menu/Avatar_Rafa.png);
+}
+
+.icone__iamarino::before {
+    content: url(../img/menu/Avatar_Atila.png);
+}
+
+.icone__souto::before {
+    content: url(../img/menu/Avatar_Souto.png);
+}
+
+.icone__nerd::before {
+    content: url(../img/menu/Avatar_Jovem_Nerd.png);
+}
+
+.icone__deschamps::before {
+    content: url(../img/menu/Avatar_Deschamps.png);
+}
+
+.icone__mostrar::before {
+    content: url(../img/menu/keyboard_arrow_down.png);
+}
+
+.icone__videos::before {
+    content: url(../img/menu/videos.png);
+}
+
+.icone__filmes::before {
+    content: url(../img/menu/filmes.png);
+}
+
+.icone__jogos::before {
+    content: url(../img/menu/jogos.png);
+}
+
+@media screen and (min-width: 834px) {
+    .menu__container {
+        font-size: 1rem;
+        height: auto;
+        left: 0%;
+        top: 80px;
+        width: 74px;
+    }
+
+    .menu__lista {
+        flex-direction: column;
+        gap: 33px;
+        justify-content: flex-start;
+        padding-top: 15px;
+    }
+
+    .menu__lista li {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .menu__container {
+        overflow: scroll;
+        width: 239px;
+    }
+
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4) {
+        display: flex;
+    }
+
+    .menu__lista {
+        border-bottom: 1.5px solid var(--azul-medio);
+        gap: 15px; 
+        height: auto;
+        padding: 20px 17px 20px 15px;
+    }
+
+    .menu__itens {
+        align-items: center;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .menu__lista:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+
+    /*.jogos {
+        order: 3;
+    }
+
+    .filmes {
+        order: 2;
+    }
+
+    .premium {
+        order: 1;
+    }
+
+    .maispagina {
+        order: 4;
+    }*/
+
+    .inscricoes, .maispagina {
+        text-transform: uppercase;
+    }
+}
